@@ -1,0 +1,231 @@
+@font-face {
+    font-family: Montserrat-ExtraBold ;
+    src: url(./fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-ExtraLight ;
+    src: url(./fonts/Montserrat-ExtraLight.ttf);
+}
+
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.bg{
+background-color: aliceblue;
+} 
+
+
+.img-fundo img{
+   margin-top: -4vh;
+   width: 90vw;
+}
+
+.img-fundo1 img{
+    width: 100vw;
+ }
+
+
+h1 {
+    text-align: center;
+    font-size: 10em ;
+}
+
+.up {
+    align-items: center;
+    justify-content: center;
+    color: rgb(39, 39, 39);
+    margin-bottom: 10%;
+}
+
+
+
+.informações h1{
+    font-size: 15px;
+}
+
+.informações iframe{
+    align-items: center;
+}
+
+.up2 {    
+    color: #3c763d;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 4;
+    border:none!important;
+    width: 100%;
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+    border-radius: 30px;
+    font-family: Montserrat-ExtraBold ;
+    text-align: center;
+}
+
+
+.up2 .main-text h1{
+    text-align: center;
+    overflow-wrap: break-word;  
+    font-size: 45px;
+    align-items: center;
+    justify-content: center;
+    margin: 9%;
+}
+
+.up2 img{
+    width: 55vw;
+    background-image: url();
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+}
+
+.up2 span{
+    font-size: 28px;
+}
+
+.up2 button{
+    border:none;
+    padding: 2px;
+    background-color: #004872;
+    width: 100px; 
+    font-size: 14px; 
+    margin: 5px;
+    border-radius: 25px;
+    font-family: Montserrat-ExtraLight;
+    font-weight: 700;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.up2 button:hover{
+    background-color: #873250;
+    font-family: Montserrat-ExtraBold ;
+}
+
+
+.tabela2 img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    margin-top: 15%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 220px;
+    padding-left: 12%;
+    margin-top: 8%;
+
+  }
+
+
+  section  .informações{
+    margin-bottom: 25%;
+    display: block;
+    font-family: Montserrat;
+    align-items: center;
+    background-color: aliceblue;
+  }
+
+  section  .informações h2{
+   padding-top: 2%;
+  }
+
+
+/* PROXIMOS JOGOS */  
+
+section .text-prox{
+    color: #3c763d;
+    font-family: Montserrat-ExtraBold ;
+}
+
+  .main3{
+    color: rgb(80, 80, 80);
+    table-layout: auto;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #2c2c2c;
+    width: 100%;
+    height: 500px;
+
+  }
+
+  @media (max-width: 600px)
+{
+  .up2
+   {
+
+    display: block;
+   }
+
+   .up2 .main-text h1{
+    word-wrap: break-word;
+    font-size: 25px;
+   }
+
+}
+
+.rodadas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+    height: 320px;
+    padding: 50px;
+    margin-bottom: 2%;
+    margin-top: 22%;
+}
+
+
+.top-card{
+    margin-top: -25%;
+    margin-bottom: 15%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 65px;
+}
+
+.rodadas button{
+    color: aliceblue;
+    display: block;
+    align-items: center;
+    background-color: rgb(57, 130, 199);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 140%;
+    margin-left: 48%;
+    border-style: none;
+    font-family: Montserrat-ExtraBold ;
+    width: 25%;
+    height: 25%;
+}
+
+.rodadas button:hover{
+    background-color: #2c2c2c;
+    color: aliceblue;
+}
