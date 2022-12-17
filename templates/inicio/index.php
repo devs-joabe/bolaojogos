@@ -42,7 +42,7 @@
 
 
 <!-- PROXIMOS JOGOS -->
-<section class="container">
+<section class="container up3">
   <h1 class="text-prox">PALPITES</h1>
   <div class="main3">
     TEXTO

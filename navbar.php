@@ -15,12 +15,12 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.php">Bolão Copa do Mundo</a>
+                <a class="navbar-brand" href="index.php">LOGOTIPO</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Inicio</a></li>
-                <li><a href="apostas.php">Apostas</a></li>
-                <li><a href="sobre.php">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Home</a></li>
+                <li class="nav-item"><a href="apostas.php">Apostas</a></li>
+                <li class="nav-item"><a href="sobre.php">Sobre</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href=""><span class="glyphicon glyphicon glyphicon-log-out"></span>Sair</a></li>
