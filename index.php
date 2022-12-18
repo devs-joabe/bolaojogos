@@ -1,5 +1,16 @@
+<?php
+if (isset($_GET['ajax'])) {
+    $ajaxFile = 'templates/tabelas/' . $_GET['ajax'];
+    include $ajaxFile;
+    if (file_exists($ajaxFile)) {
+
+    }
+}
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -17,27 +28,30 @@
 
     <section>
         <?php
-    if (!isset($_GET['r'])) {
-        include "templates/login/index.php";
-    } else {
-        switch ($_GET['r']) {
-            case 'inicio':
-                include "templates/login/index.php";
-                break;
-            case 'palpites':
-                include "templates/palpites/palpites.php";
-                break;
-            case 'cadastro':
-                include "templates/cadastro/index.php";
-                break;
-            case 'principal':
-                include "templates/inicio/index.php";
-                break;             
-            default:
-                include "templates/login/index.php";
+        if (!isset($_GET['r'])) {
+            include "templates/login/index.php";
+        } else {
+            switch ($_GET['r']) {
+                case 'inicio':
+                    include "templates/login/index.php";
+                    break;
+                case 'palpites':
+                    include "templates/palpites/palpites.php";
+                    break;
+                case 'cadastro':
+                    include "templates/cadastro/index.php";
+                    break;
+                case 'tabelas':
+                    include "templates/tabelas/tabelas-prontas.php";
+                    break;
+                case 'principal':
+                    include "templates/inicio/index.php";
+                    break;
+                default:
+                    include "templates/login/index.php";
+            }
         }
-    }
-    ?>
+        ?>
     </section>
 
 

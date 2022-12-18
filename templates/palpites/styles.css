@@ -11,8 +11,8 @@
 }
 
 .form{
-    background-image: url(../../img/img-palpites.jpg);
-    background-size: contain;
+    background-color: darkgrey;
+    background-repeat:no-repeat;
     border-style: hidden;
     border-radius: 15px;
     width: 65vh;
@@ -37,9 +37,7 @@ font-family: Montserrat-Black;
 }
 
 body{
-    background-image: url(../../img/bg-palpites.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: rgb(167, 8, 8);
 }
 
 
@@ -85,4 +83,41 @@ body{
 .rodadas-img input{
     width: 50px;
 }
+
+
+ .form .grupo1 button {
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin:  0 auto;
+    margin-bottom: 35%;
+    
+}
+
+.form .grupo2 button {
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin:  0 auto;
+    margin-bottom: 55%;
+    
+}
+
+.form .grupos { 
+    align-items: center;
+    justify-content: space-between;
+    margin:  0 auto;
+    word-spacing: normal;
+    padding-bottom: 50px;
+}
  
+
+.form  .grupos button{
+font-size: smaller;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+border-radius: 5px;
+}

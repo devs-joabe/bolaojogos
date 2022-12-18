@@ -10,7 +10,9 @@ $_SESSION = array();
 // Nota: Isto destruirá a sessão, e não apenas os dados!
 if (ini_get("session.use_cookies")) {
     $params = session_get_cookie_params();
-    setcookie(session_name(), '', time() - 42000,
+    setcookie(
+        session_name(),
+        '', time() - 42000,
         $params["path"], $params["domain"],
         $params["secure"], $params["httponly"]
     );
@@ -31,7 +33,7 @@ session_destroy();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>BOLÃO COPA</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -57,7 +59,9 @@ session_destroy();
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+
+                            <div class="col-lg-6 d-none d-lg-block bg-login"
+                                style="background-image: url(./img/tela-login.svg);  background-size: cover;"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
@@ -70,18 +74,20 @@ session_destroy();
                                                 placeholder="Digite seu e-mail" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" name="senha" required
-                                                id="exampleInputPassword" placeholder="Digite sua senha">
+                                            <input type="password" class="form-control form-control-user" name="senha"
+                                                required id="exampleInputPassword" placeholder="Digite sua senha">
                                         </div>
-                                        <h6 style="text-align: center">Não tem usuário? <a href="index.php?r=cadastro">Cadastre-se</a></h6>
-                                        
+                                        <h6 style="text-align: center">Não tem usuário? <a
+                                                href="index.php?r=cadastro">Cadastre-se</a></h6>
+
                                         <button class="btn btn-primary btn-user btn-block">
                                             Login
                                         </button>
-                                        
+
                                     </form>
                                     <hr>
-                                    
+                                    <label id="login"></label>
+
                                 </div>
                             </div>
                         </div>
@@ -103,7 +109,7 @@ session_destroy();
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-<?php 
+    <?php
 include '_scripts/autenticar.php';
 ?>
 </body>

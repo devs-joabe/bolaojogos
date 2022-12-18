@@ -29,7 +29,8 @@
 }
 
 .bg{
-background-color: aliceblue;
+background-color:#e4ebf2;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
 
 
@@ -67,7 +68,7 @@ h1 {
 }
 
 .up2 {    
-    background-color: rgba(17, 17, 17, 0.055);
+    background-color:#e4ebf2;
     color: #3c763d;
     justify-content: center;
     display: flex;
@@ -84,12 +85,26 @@ h1 {
 
 
 .up2 .main-text h1{
-    text-align: center;
-    overflow-wrap: break-word;  
+    text-align: left;
     font-size: 45px;
     align-items: center;
     justify-content: center;
-    margin: 2%;
+    margin: 5%;
+    word-break: keep-all;
+    display: flex;
+    margin-bottom: -4%;
+}
+
+.up2 span{
+    color: #004872;
+    margin: 5%;
+    word-break: break-all;
+    display: flex;
+    font-size: 28px;
+    align-items: center;
+    text-align:left;
+    margin-bottom: -4%;
+    
 }
 
 .up2 img{
@@ -98,28 +113,30 @@ h1 {
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
 }
-
-.up2 span{
-    font-size: 28px;
-}
+  
 
 .up2 button{
+    align-items: center;
     border:none;
     padding: 2px;
-    background-color: #004872;
+    background-color: #ffffff;
     width: 100px; 
     font-size: 14px; 
-    margin: 5px;
+    margin: 5%;
+    float: left;
     border-radius: 25px;
-    font-family: Montserrat-ExtraLight;
+    font-family: Montserrat-ExtraBold ;
     font-weight: 700;
     align-items: center;
     flex-wrap: nowrap;
+    box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .up2 button:hover{
-    background-color: #873250;
+    color: rgb(255, 255, 255);
+    background-color: #f1f1f1;
     font-family: Montserrat-ExtraBold ;
+    box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -154,7 +171,7 @@ h1 {
 
 
   section .up3{
-    background-color: rgba(17, 17, 17, 0.055);
+    background-color:#d5e3f1;
     width: 100%;
     height: 100vh;
   }
@@ -187,11 +204,30 @@ section .text-prox{
 
     display: block;
    }
-
+   
    .up2 .main-text h1{
     word-wrap: break-word;
     font-size: 25px;
+    text-align: center;
+    line-break: anywhere;
+    display: block; 
    }
+
+   .up2 span{
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .up2 button{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%; 
+   }
+
+   
 
 }
 

@@ -21,12 +21,12 @@ if($total==0){ ?>
     <script type="text/javascript">
         Swal.fire({
             title:'Ops!',
-            text:'Login não encontrado',
+            text:'Email e senha incorreta ou nao cadastrado',
             icon:'error',
             confirmButtonText:'Ok'
         }).then((result)=>{
             if(result.isConfirmed){
-                location.href="../templates/login/index.php";
+                location.href="../index.php?r=inicio";
             }
         })
     </script>
@@ -35,28 +35,25 @@ if($total==0){ ?>
     $query = $mysqli->query($sql);
     $total = $query->num_rows;
 
-    if($total==0){ ?>
-         <script type="text/javascript">
-        Swal.fire({
-            title:'Ops!',
-            text:'Senha incorreta',
-            icon:'error',
-            confirmButtonText:'Ok'
-        }).then((result)=>{
-            if(result.isConfirmed){
-                location.href="../login.php";
-            }
-        })
-    </script>
-    <?php }else{
-       $_SESSION['email'] = $email; 
-       header ('Location: http://localhost/projeto-erik/index.php?r=principal');
-
-    }
-
+    if($total==0){?>
+    <script type="text/javascript">
+       Swal.fire({
+           title:'Ops!',
+           text:'Email e senha incorreta ou nao cadastrado',
+           icon:'error',
+           confirmButtonText:'Ok'
+       }).then((result)=>{
+           if(result.isConfirmed){
+            location.href="../index.php?r=inicio";
+           }
+       })
+   </script>
+   <?php }else{
+      $_SESSION['email'] = $email;
+      header ('Location: ../index.php?r=principal');
+   }
 }
 }
-
 ?>
-    </body>
+   </body>
 </html>
